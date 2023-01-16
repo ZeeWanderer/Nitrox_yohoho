@@ -2,7 +2,7 @@
     <img src="https://i.imgur.com/ofnNX5z.gif" alt="Nitrox Subnautica Multiplayer Mod" />
 </p>
 
-# Subnautica Nitrox
+# Subnautica Nitrox - Yohoho edition with disabled Piracy Detection
 An open-source, multiplayer modification for the game <a href="https://unknownworlds.com/subnautica/">Subnautica</a>.
 
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
