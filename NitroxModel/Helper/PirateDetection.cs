@@ -28,36 +28,18 @@ namespace NitroxModel.Helper
 
         public static bool TriggerOnDirectory(string subnauticaRoot)
         {
-            if (!IsPirateByDirectory(subnauticaRoot))
-            {
-                return false;
-            }
-            
-            OnPirateDetected();
-            return true;
+            return false;
         }
 
         private static event EventHandler pirateDetected;
 
         private static bool IsPirateByDirectory(string subnauticaRoot)
         {
-            string steamDll = Path.Combine(subnauticaRoot, "steam_api64.dll");
-
-            // Check for a modified steam dll
-            if (File.Exists(steamDll))
-            {
-                if (new FileInfo(steamDll).Length > 209000)
-                {
-                    return true;
-                }
-            }
             return false;
         }
 
         private static void OnPirateDetected()
         {
-            pirateDetected?.Invoke(null, EventArgs.Empty);
-            HasTriggered = true;
         }
     }
 }
